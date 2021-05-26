@@ -1,8 +1,22 @@
-# How to use
+# WS-MATRIX
 
-## Route: "/rotate" (Method: POST)
+## Running up:
 
-Example of the body for the request:
+```zsh
+docker build -t ws-matrix .
+docker run --rm -it -p 3000:3000 ws-matrix
+```
+
+or
+
+```bash
+docker-componse up
+```
+
+## Example:
+
+### POST: **/rotate**
+body content:
 ```json
 {
     "data": [
@@ -13,7 +27,7 @@ Example of the body for the request:
 }
 ```
 
-Example of response of the request:
+Example of the response:
 ```json
 {
     "status": true,
